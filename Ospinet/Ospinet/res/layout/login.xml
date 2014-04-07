@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   
+    android:fillViewport="true" >
+
+  <RelativeLayout
+      android:layout_width="fill_parent"
+      android:layout_height="match_parent"
+      android:background="#558ED5" >
+
+  		<!--  Header Starts-->
+
+	<include
+	    android:id="@+id/appheader"
+	    layout="@layout/header" />
+
+  		<!--  Header Ends -->
+  		<!-- Login Form -->
+
+  		   <LinearLayout
+  		       android:id="@+id/contcat"
+  		       android:layout_width="match_parent"
+  		       android:layout_height="wrap_content"
+  		       android:layout_below="@id/appheader"
+  		       android:layout_centerHorizontal="true"
+  		       android:layout_centerInParent="true"
+  		       android:layout_centerVertical="true"
+  		       android:layout_marginLeft="20dp"
+  		       android:layout_marginTop="40dp"
+  		       android:background="#C3D69B"
+  		       android:orientation="vertical"
+  		       android:padding="10dp" >
+
+  		       <Button
+  		           android:id="@+id/freesignup_btn"
+  		           style="@drawable/button_custom"
+  		           android:layout_width="fill_parent"
+  		           android:layout_height="wrap_content"
+  		           android:background="@drawable/button_custom"
+  		           android:text="Free Sign Up"
+  		           android:textColor="#FFFFFF"
+  		           android:textSize="20dp" />
+
+  		       <TextView
+  		           android:id="@+id/errorMsg"
+  		           android:layout_width="fill_parent"
+  		           android:layout_height="wrap_content"
+  		           android:layout_marginTop="10dp"
+  		           android:textColor="#E2002C" />
+
+  		       <EditText
+  		           android:id="@+id/fname_txt"
+  		           android:layout_width="fill_parent"
+  		           android:layout_height="wrap_content"
+  		           android:layout_marginBottom="20dp"
+  		           android:layout_marginTop="5dp"
+  		           android:background="@drawable/textbox"
+  		           android:fadingEdge="horizontal|vertical"
+  		           android:ems="10"
+  		           android:hint="Username"
+  		           android:inputType="textEmailAddress"
+  		           android:singleLine="true"
+  		           android:textColor="#000000"
+  		            android:focusable="true"
+  		           android:focusableInTouchMode="true"
+  		           android:typeface="serif" />
+
+  		       <EditText
+  		           android:id="@+id/lname_txt"
+  		           android:layout_width="fill_parent"
+  		           android:layout_height="wrap_content"
+  		           android:layout_marginTop="10dp"
+  		           android:background="@drawable/textbox"
+  		           android:ems="10"
+  		           android:fadingEdge="horizontal|vertical"
+  		           android:focusableInTouchMode="true"
+  		           android:hint="Password"
+  		           android:inputType="textPassword"
+  		           android:password="true"
+  		           android:singleLine="true"
+  		           android:textColor="#000000" >
+
+  		           <requestFocus />
+  		       </EditText>
+
+  		       <Button
+  		           android:id="@+id/memberSave"
+  		           style="@drawable/button_custom"
+  		           android:layout_width="fill_parent"
+  		           android:layout_height="wrap_content"
+  		           android:layout_marginTop="10dp"
+  		           android:background="@drawable/button_custom"
+  		           android:text="Login>>"
+  		           android:textColor="#FFFFFF" />
+
+  		   </LinearLayout>
+<!-- Login Form Ends -->
+
+  </RelativeLayout>
+</ScrollView>

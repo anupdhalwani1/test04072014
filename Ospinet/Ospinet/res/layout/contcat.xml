@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   
+    android:fillViewport="true" >
+
+  <RelativeLayout
+      android:layout_width="fill_parent"
+      android:layout_height="match_parent"
+      android:background="#558ED5" >
+
+  		<!--  Header Starts-->
+
+	<include
+	    android:id="@+id/appheader"
+	    layout="@layout/header" />
+
+  		<!--  Header Ends -->
+  		<!-- Login Form -->
+
+  		   <LinearLayout
+  		       android:id="@+id/contcat"
+  		       android:layout_width="match_parent"
+  		       android:layout_height="wrap_content"
+  		       android:layout_below="@id/appheader"
+  		       android:layout_centerHorizontal="true"
+  		       android:layout_centerInParent="true"
+  		       android:layout_centerVertical="true"
+  		       android:layout_marginLeft="20dp"
+  		       android:layout_marginTop="40dp"
+  		       android:background="#C3D69B"
+  		       android:orientation="vertical"
+  		       android:padding="10dp" >
+
+  		       <TextView
+  		           android:id="@+id/textView1"
+  		           android:layout_width="match_parent"
+  		           android:layout_height="wrap_content"
+  		           android:text="For feedback, suggestions, inquiries or simply to get in touch with us, write to us at contact.us@ospinet.com Like us on facebook and drop us a message" />
+
+  		   </LinearLayout>
+
+
+  </RelativeLayout>
+</ScrollView>

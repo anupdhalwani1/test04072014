@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ospinet Medical</string>
+     <string name="LoginPageName">Ospinet Medical >> Login</string>
+     <string name="MemberPageName">Ospinet Medical >> Member</string>
+     <string name="ContcatPageName">Ospinet Medical >> Contcat</string>
+     <string name="SignupPageName">Ospinet Medical >> SignUp</string>
+      <string name="HeaderPageName"></string>
+     
+    <string name="manage_members">Manage Members</string>
+    
+   <string name="logout">Logout</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="ic_contcat">Contcat</string>
+</resources>

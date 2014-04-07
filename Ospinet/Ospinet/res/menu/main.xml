@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/manage_members"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/manage_members"/>
+	<item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/logout"/>
+</menu>

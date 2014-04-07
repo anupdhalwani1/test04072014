@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#558ED5" >
+
+        <!-- Header Starts -->
+
+        <include
+            android:id="@+id/appheader"
+            layout="@layout/header" />
+
+        <!-- Header Ends -->
+        <!-- Login Form -->
+
+        <LinearLayout
+            android:id="@+id/addMember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appheader"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:background="#C3D69B"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TableRow
+                android:id="@+id/tbl_member"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.07" >
+
+                <Button
+                    android:id="@+id/btn_viewallmembers"
+                    style="@drawable/button_custom1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_custom2"
+                    android:text="View Members"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/btn_Addmember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_custom1"
+                    android:text="Add Member"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/btn_Editmember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_custom2"
+                    android:text="Edit Member"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/errorMsg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#E2002C" />
+
+            <EditText
+                android:id="@+id/fname_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textbox"
+                android:ems="10"
+                android:fadingEdge="horizontal|vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Frist Name"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/lname_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textbox"
+                android:ems="10"
+                android:fadingEdge="horizontal|vertical"
+                android:focusableInTouchMode="true"
+                android:hint="Last Name"
+                android:inputType="text"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="#000000" >
+            </EditText>
+
+            <RadioGroup
+                android:id="@+id/gender_rd"
+                style="@drawable/radio_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.07"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                 >
+
+                <RadioButton
+                    android:id="@+id/male_rd"
+                    style="@drawable/radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_button"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:text="M"
+                    android:textColor="#FFFFFF"
+                    android:width="230dp" />
+
+                <RadioButton
+                    android:id="@+id/female_rd"
+                    style="@drawable/radio_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/radio_button"
+                    android:button="@android:color/transparent"
+                    android:text="F"
+                    android:textColor="#FFFFFF" />
+
+            </RadioGroup>
+ <TableRow      android:id="@+id/tbl_agedata"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.07"  android:layout_marginTop="10dp" >
+
+                <Button
+                    android:id="@+id/btn_dob"
+                    style="@drawable/button_custom1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_custom3"
+                    android:text="DOB"
+                    android:textColor="#FFFFFF"  android:width="150dp" />
+
+                <Button
+                    android:id="@+id/btn_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  
+                    android:background="@drawable/button_custom3"
+                    android:text="Age"
+                    android:textColor="#FFFFFF" android:width="150dp"  />
+
+                <Button
+                    android:id="@+id/btn_unborn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  
+                    android:background="@drawable/button_custom3"
+                    android:text="Unborn"
+                    android:textColor="#FFFFFF" android:width="150dp"  />
+            </TableRow>
+
+ 			<TableRow
+ 			    android:id="@+id/tbl_age"
+ 			    android:layout_width="fill_parent"
+ 			    android:layout_height="wrap_content"
+ 			    android:layout_gravity="bottom"
+ 			    android:layout_marginTop="10dp"
+ 			    android:layout_weight="0.07"
+ 			    android:visibility="gone" >
+  				 <EditText
+                android:id="@+id/age_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textbox"
+                android:ems="10"
+                android:fadingEdge="horizontal|vertical"
+                android:focusableInTouchMode="true"
+                android:hint="Age"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#000000" >
+                </EditText>
+               </TableRow>    
+
+               	<TableRow
+               	    android:id="@+id/tbl_dob"
+               	    android:layout_width="fill_parent"
+               	    android:layout_height="wrap_content"
+               	    android:layout_gravity="bottom"
+               	    android:layout_marginTop="10dp"
+               	    android:layout_weight="0.07"
+               	    android:visibility="gone" >
+ 					 <!-- Year Spinner Element -->
+					    <Spinner
+					        android:id="@+id/dobYear_sp"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:background="@drawable/radio_button"
+					    />
+                <!-- Month Spinner Element -->
+
+					    <Spinner
+					        android:id="@+id/dobMonth_sp"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:background="@drawable/radio_button"
+					        android:paddingLeft="10dp" />
+
+           <!-- Day Spinner Element -->
+
+					    <Spinner
+					        android:id="@+id/dobDay_sp"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:background="@drawable/radio_button"
+					        android:paddingLeft="10dp" />
+
+               </TableRow>    
+
+               	<TableRow
+               	    android:id="@+id/tbl_unborn"
+               	    android:layout_width="fill_parent"
+               	    android:layout_height="wrap_content"
+               	    android:layout_gravity="bottom"
+               	    android:layout_marginTop="10dp"
+               	    android:layout_weight="0.07"
+               	    android:visibility="gone" >
+				 <!-- Year Spinner Element -->
+					    <Spinner
+					        android:id="@+id/unbornYear_sp"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:background="@drawable/radio_button"
+					    />
+                <!-- Month Spinner Element -->
+
+					    <Spinner
+					        android:id="@+id/unbornMonth_sp"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:background="@drawable/radio_button"
+					        android:paddingLeft="10dp" />
+
+           <!-- Day Spinner Element -->
+
+					    <Spinner
+					        android:id="@+id/unbornDay_sp"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:background="@drawable/radio_button"
+					        android:paddingLeft="10dp" />
+             
+               </TableRow>             
+
+            <Button
+                android:id="@+id/memberSave"
+                style="@drawable/button_custom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_custom"
+                android:text="Save"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <!-- Login Form Ends -->
+
+    </RelativeLayout>
+
+</ScrollView>
